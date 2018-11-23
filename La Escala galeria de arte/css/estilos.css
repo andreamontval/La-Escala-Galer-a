@@ -6,7 +6,7 @@ body{
   min-height: 150%;
 }
 header{
-  background: pink;
+  background:rgb(251, 255, 252);
   position: fixed;
   top: 0;
   left: 0;
@@ -37,7 +37,7 @@ flex-direction: column;
 flex-basis: 82%;
 flex-grow: 1;
 text-align: center;
-background-color: blue;
+background-color: rgba(255, 202, 8, 0.7);
 }
 .paginas a{
   text-decoration:none;
@@ -50,23 +50,87 @@ background-color: blue;
   display: flex;
 }
 section{
-  background-color: green;
+  background-color:rgb(251, 255, 252);
   height: 150%;
   display: flex;
   margin-left: 20%;
   flex-basis: 80%;
 
 }
-section .imagenesinicio{
-  background-color: red;
+.imagenesinicio{
   height: 60%;
-  display: flex;
   width: 78.5%;
   position: absolute;
   top: 10%;
+  overflow: hidden;
+
+}
+.imagenesinicio ul{
+  display: flex;
+  padding: 0;
+  width: 1500%;
+
+  -webkit-animation: cambio 75s infinite;
+  animation-direction: alternate;
+}
+.imagenesinicio li{
+  height: 100%;
+  width: 100%;
+  list-style: none;
+}
+.imagenesinicio img{
+  height: 100%;
+  width: 100%;
+}
+@keyframes cambio{
+
+  0%{ margin-left: 0;}
+  6%{margin-left: 0;}
+
+  6.66666%{margin-left: -100%}
+  10%{margin-left: -100%}
+
+  13.33332%{margin-left: -200%}
+  15%{margin-left: -200%}
+
+  19.9999%{margin-left: -300%}
+  22%{margin-left: -300%}
+
+  26.66658%{margin-left: -400%}
+  30%{margin-left: -400%}
+
+  33.33324%{margin-left: -500%}
+  35%{margin-left: -500%}
+
+  39.99990%{margin-left: -600%}
+  42%{margin-left: -600%}
+
+  46.66656%{margin-left: -700%}
+  50%{margin-left: -700%}
+
+  53.33322%{margin-left: -800%}
+  55%{margin-left: -800%}
+
+  59.99988%{margin-left: -900%}
+  62%{margin-left: -900%}
+
+  66.66654%{margin-left: -1000%}
+  70%{margin-left: -1000%}
+
+  73.33320%{margin-left: -1100%}
+  75%{margin-left: -1100%}
+
+  79.99986%{margin-left: -1200%}
+  82%{margin-left: -1200%}
+
+  86.66652%{margin-left: -1300%}
+  90%{margin-left: -1300%}
+
+  93.33318%{margin-left: -1400%}
+  100%{margin-left: -1400%}
 }
 .exhibicionesactuales{
-  background-color: purple;
+  background-color: rgba(255, 202, 8, 0.7);
   height: 30%;
   width: 70%;
   padding: 0 5% 2% 5%;
