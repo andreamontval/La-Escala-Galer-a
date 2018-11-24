@@ -2,67 +2,63 @@
 margin: 0;
 }
 body{
-  margin: 10px;
-  min-height: 150%;
+  width: 100%;
+  height: 100%;
 }
 header{
-  background:rgb(251, 255, 252);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 20%;
-  height: 100%;
-  display: inline-block;
-
+margin-top: 1%;
+align-items: center;
 }
 .laescala{
 font-family: helvetica;
-display: flex;
 flex-direction: column;
-flex-basis: 30%;
-height: 30%;;
-flex-grow: 1;
-
-padding: 3%;
-top: 5%;
-left: 2%;
+width: 20%;
+top: 0%;
+left: 18%;
+position: relative;
 text-align: center;
 justify-content: center;
-background-color: #FFCA08;
+background-color: rgba(255, 202, 8);
+padding: 0.5% 5% 0.5% 5%;
 }
 .paginas{
 font-family: helvetica;
 display: flex;
-flex-direction: column;
-flex-basis: 82%;
-flex-grow: 1;
-text-align: center;
-background-color: rgba(255, 202, 8, 0.7);
+width: 30%;
+top: 3.5%;
+right: 2%;
+position: absolute;
+justify-content: space-between;
+margin-top: 1.5%;
+
+padding: 0 4% 0 4%;
 }
 .paginas a{
   text-decoration:none;
-  color: grey;
+  color: rgb(97, 69, 67);
   font-size: 140%;
-  display: inline-block;
-  flex-basis: 10%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-section{
-  background-color:rgb(251, 255, 252);
-  height: 150%;
-  display: flex;
-  margin-left: 20%;
-  flex-basis: 80%;
+  padding: 3.5%;
+  font-weight: 600;
+  font-family: times;
 
 }
+section{
+    margin-top: 1.5%;
+    margin-bottom: 5%;
+    background: white;
+    max-width: 100%;
+    max-height: 100%;
+    font-family: times;
+    border-top: 4px double rgb(97, 69, 67);
+  }
 .imagenesinicio{
-  height: 60%;
-  width: 78.5%;
-  position: absolute;
-  top: 10%;
+  height: 70%;
+  width: 95%;
+  position: relative;
+  top: 0;
+  left: 2.5%;
   overflow: hidden;
+  align-content: center;
 
 }
 .imagenesinicio ul{
@@ -70,7 +66,7 @@ section{
   padding: 0;
   width: 1500%;
 
-  -webkit-animation: cambio 75s infinite;
+  -webkit-animation: cambio 150s infinite;
   animation-direction: alternate;
 }
 .imagenesinicio li{
@@ -85,7 +81,7 @@ section{
 @keyframes cambio{
 
   0%{ margin-left: 0;}
-  6%{margin-left: 0;}
+  4%{margin-left: 0;}
 
   6.66666%{margin-left: -100%}
   10%{margin-left: -100%}
@@ -133,17 +129,17 @@ section{
   background-color: rgba(255, 202, 8, 0.7);
   height: 30%;
   width: 70%;
-  padding: 0 5% 2% 5%;
+  padding: 0 3% 0% 3%;
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 41.5%;
+  top:-2em;
   left: 13%;
 
 }
 
 .exhibicionesactuales h1{
-  background-color: black;
+  background-color: rgb(27, 26, 27);
   color: white;
   text-align: center;
   padding: 2%;
@@ -153,7 +149,7 @@ section{
   border: 1px solid black;
   margin-top: 2%;
   padding: 2%;
-  background-color: yellow;
+  background-color: rgba(255, 202, 8);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -183,7 +179,7 @@ section{
   border: 1px solid black;
   margin-top: 2%;
   padding: 2%;
-  background-color: yellow;
+  background-color: rgba(255, 202, 8);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -211,7 +207,7 @@ section{
   border: 1px solid black;
   margin-top: 2%;
   padding: 2%;
-  background-color: yellow;
+  background-color: rgba(255, 202, 8);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -235,13 +231,6 @@ section{
   flex-grow: 2;
   margin-bottom: 0%;
 }
-.horario{
-  position: absolute;
-  background-color: orange;
-  width: 20%;
-  top: 110%;
-  padding: 3%;
-}
 
 h1, p{
 	font-weight: bold;
@@ -251,12 +240,36 @@ h1, p{
 
 
 footer{
-	background-color: black;
-	position: fixed;
+  background-color: black;
+	position: relative;
 	bottom: 0;
-	display: inline-block;
+	display: flex;
 	text-align: center;
 	width: 100%;
-	height: 60px;
-		color: white;
+	height: 90px;
+	color: white;
+}
+.horario{
+  position: absolute;
+  width: 20%;
+  bottom: 1em;
+  padding-top: 0.5%;
+  font-size: 1em;
+  left: 3%;
+}
+.direccion{
+  position: absolute;
+  width: 20%;
+  bottom: 1em;
+  padding-top: 0.5%;
+  font-size: 1em;
+  left: 30%;
+}
+.redessociales{
+  position: absolute;
+  width: 20%;
+  bottom: 3em;
+  padding: 0%;
+  font-size: 1em;
+  left: 70%;
 }
